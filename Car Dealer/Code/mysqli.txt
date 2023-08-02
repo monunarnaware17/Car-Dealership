@@ -1,0 +1,78 @@
+
+
+
+
+mysql> use car_dealer_inventory;
+Database changed
+mysql> show tables;
++--------------------------------+
+| Tables_in_car_dealer_inventory |
++--------------------------------+
+| current_inventory              |
+| log                            |
+| sold_cars                      |
++--------------------------------+
+3 rows in set (0.01 sec)
+
+
+mysql> describe current_inventory;
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| UID               | int         | NO   | PRI | NULL    |       |
+| Manufacturer      | varchar(50) | YES  |     | NULL    |       |
+| Model             | varchar(50) | YES  |     | NULL    |       |
+| Battery_capacity  | float       | YES  |     | NULL    |       |
+| Max_Power         | float       | YES  |     | NULL    |       |
+| Car_Range         | int         | YES  |     | NULL    |       |
+| Battery_Warranty  | int         | YES  |     | NULL    |       |
+| Acceleration_Time | float       | YES  |     | NULL    |       |
+| Charging_Time     | int         | YES  |     | NULL    |       |
+| Size              | varchar(30) | YES  |     | NULL    |       |
+| ncap_rating       | int         | YES  |     | NULL    |       |
+| Price             | float       | YES  |     | NULL    |       |
+| Availability      | varchar(30) | YES  |     | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
+13 rows in set (0.01 sec)
+
+
+mysql> describe log;
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| UID               | int         | YES  |     | NULL    |       |
+| Manufacturer      | varchar(50) | YES  |     | NULL    |       |
+| Model             | varchar(50) | YES  |     | NULL    |       |
+| Battery_capacity  | float       | YES  |     | NULL    |       |
+| Max_Power         | float       | YES  |     | NULL    |       |
+| Car_Range         | int         | YES  |     | NULL    |       |
+| Battery_Warranty  | int         | YES  |     | NULL    |       |
+| Acceleration_Time | float       | YES  |     | NULL    |       |
+| Charging_Time     | int         | YES  |     | NULL    |       |
+| Size              | varchar(30) | YES  |     | NULL    |       |
+| ncap_rating       | int         | YES  |     | NULL    |       |
+| Price             | float       | YES  |     | NULL    |       |
+| Availability      | varchar(30) | YES  |     | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
+13 rows in set (0.00 sec)
+
+
+mysql> describe sold_cars;
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| UID               | int         | NO   | PRI | NULL    |       |
+| Manufacturer      | varchar(50) | YES  |     | NULL    |       |
+| Model             | varchar(50) | YES  |     | NULL    |       |
+| Battery_capacity  | float       | YES  |     | NULL    |       |
+| Max_Power         | float       | YES  |     | NULL    |       |
+| Car_Range         | int         | YES  |     | NULL    |       |
+| Battery_Warranty  | int         | YES  |     | NULL    |       |
+| Acceleration_Time | float       | YES  |     | NULL    |       |
+| Charging_Time     | int         | YES  |     | NULL    |       |
+| Size              | varchar(30) | YES  |     | NULL    |       |
+| ncap_rating       | int         | YES  |     | NULL    |       |
+| Price             | float       | YES  |     | NULL    |       |
+| Availability      | varchar(30) | YES  |     | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
+13 rows in set (0.00 sec)
